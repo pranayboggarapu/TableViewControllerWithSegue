@@ -14,6 +14,8 @@
 		247F5D8621208B72009A452D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 247F5D8421208B72009A452D /* LaunchScreen.storyboard */; };
 		247F5D8E21208B9C009A452D /* Villain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247F5D8D21208B9C009A452D /* Villain.swift */; };
 		247F5DAE21209503009A452D /* VillainDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247F5DAD21209503009A452D /* VillainDetailsViewController.swift */; };
+		24FD71A12120C4050087D4BA /* CollectionsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FD71A02120C4050087D4BA /* CollectionsCollectionViewController.swift */; };
+		24FD71A32120C9E40087D4BA /* VillainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FD71A22120C9E40087D4BA /* VillainCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		247F5D8721208B72009A452D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		247F5D8D21208B9C009A452D /* Villain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Villain.swift; sourceTree = "<group>"; };
 		247F5DAD21209503009A452D /* VillainDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VillainDetailsViewController.swift; sourceTree = "<group>"; };
+		24FD71A02120C4050087D4BA /* CollectionsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionsCollectionViewController.swift; sourceTree = "<group>"; };
+		24FD71A22120C9E40087D4BA /* VillainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VillainCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				247F5D8721208B72009A452D /* Info.plist */,
 				247F5D8D21208B9C009A452D /* Villain.swift */,
 				247F5DAD21209503009A452D /* VillainDetailsViewController.swift */,
+				24FD71A02120C4050087D4BA /* CollectionsCollectionViewController.swift */,
+				24FD71A22120C9E40087D4BA /* VillainCollectionViewCell.swift */,
 			);
 			path = Villains;
 			sourceTree = "<group>";
@@ -143,6 +149,8 @@
 			files = (
 				247F5D7E21208B71009A452D /* ViewController.swift in Sources */,
 				247F5DAE21209503009A452D /* VillainDetailsViewController.swift in Sources */,
+				24FD71A32120C9E40087D4BA /* VillainCollectionViewCell.swift in Sources */,
+				24FD71A12120C4050087D4BA /* CollectionsCollectionViewController.swift in Sources */,
 				247F5D7C21208B71009A452D /* AppDelegate.swift in Sources */,
 				247F5D8E21208B9C009A452D /* Villain.swift in Sources */,
 			);

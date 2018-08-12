@@ -13,9 +13,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    var villains = [Villain]()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //Adding it to the meme Array in App Delegate
+        let object = UIApplication.shared.delegate
+        let appDelegate = object as! AppDelegate
+        for individualVillain in Villain.allVillains {
+            appDelegate.villains.append(individualVillain)
+        }
         return true
     }
 

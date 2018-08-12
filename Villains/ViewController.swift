@@ -14,7 +14,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     // Get ahold of some villains, for the table
     // This is an array of Villain instances
-    let allVillains = Villain.allVillains
+    var allVillains: [Villain]?
     
     var selectedVillain: String?
     var selectedVillainText: String?
@@ -24,6 +24,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        allVillains = appDelegate.villains
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -31,13 +33,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        return self.allVillains.count
-        
+        return self.allVillains!.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let villain = self.allVillains[(indexPath as NSIndexPath).row]
+        let villain = self.allVillains![(indexPath as NSIndexPath).row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "VillainCell")
         
         
@@ -58,7 +58,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let villain = self.allVillains[indexPath.row]
+        let villain = self.allVillains![indexPath.row]
         self.selectedVillain = villain.imageName
         self.selectedVillainText = villain.evilScheme
         
